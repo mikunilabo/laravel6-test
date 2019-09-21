@@ -11,5 +11,30 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.sass('resources/sass/app.scss', 'public/css');
+
+mix.styles([
+    'node_modules/paper-kit/assets/css/paper-kit.css',
+], 'public/css/vendor/paper-kit.css');
+
+mix.js('resources/js/app.js', 'public/js');
+
+mix.scripts([
+    'node_modules/paper-kit/assets/js/plugins/bootstrap-switch.js',
+    'node_modules/paper-kit/assets/js/plugins/nouislider.min.js',
+    'node_modules/paper-kit/assets/js/plugins/moment.min.js',
+    'node_modules/paper-kit/assets/js/plugins/bootstrap-datepicker.js',
+    'node_modules/paper-kit/assets/js/paper-kit.js',
+], 'public/js/vendor/paper-kit.js');
+
+/**
+ * Source Maps
+ */
+mix.sourceMaps();
+
+/**
+ * Versioning
+ */
+if (mix.inProduction()) {
+    mix.version();
+}

@@ -12,6 +12,7 @@
 */
 
 Route::view('/', 'welcome');
+Route::view('test', 'test');
 
 Auth::routes();
 

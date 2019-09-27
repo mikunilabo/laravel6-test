@@ -58,13 +58,41 @@
         .section {
             padding: 35px 0;
         }
+
+
+.words_test {                    /* ロゴ部分の指定 */
+    text-align:  center;        /* 文字を中央揃え */
+    color:  #fff;                /* 文字の色指定 */
+    margin:  0 auto;            /* 中央寄せ */
+    padding: 100px 0;                /* 余白指定 */
+    font-size: 500%;            /* 文字サイズ指定 */
+}
+
+.background_test,
+.background_test_mini {                /* 背景部分の指定 */
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 5 10px -4px rgba(0, 0, 0, 0);
+}
+
+.words_test_mini {                    /* ロゴ部分の指定 */
+    text-align:  center;        /* 文字を中央揃え */
+    color:  #fff;                /* 文字の色指定 */
+    margin:  0 auto;            /* 中央寄せ */
+    padding: 40px 0;                /* 余白指定 */
+    font-size: 200%;            /* 文字サイズ指定 */
+}
+
     </style>
 </head>
 <body class="index-page sidebar-collapse">
     @component ('layouts.header') @endcomponent
 
     <div class="main">
-        @component ('layouts.intro') @endcomponent
+        @if (false)
+            @component ('layouts.intro') @endcomponent
+        @endif
+
+        @component ('layouts.notifications') @endcomponent
 
         <div class="section section-main">
             <div class="container">

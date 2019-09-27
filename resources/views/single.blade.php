@@ -2,6 +2,14 @@
 
 @section ('content')
     <div class="card">
+        <div class="background_test" style="background: linear-gradient(135deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);">
+            <div class="words_test">
+                漢字漢字漢字
+            </div>
+        </div>
+@if (false)
+          <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AABGCdB59PCRUg6LxDEw0fy5cW7aC1mJ9VxGUSzKmNo9YQ/12/78400833/jpeg/32x32/1/_/1/2/640x360.jpg/EIiY6zwYz6YTIAcoBw/hSaVqeKXMgcAX6NyC5zeCBLqq7R8l1q8BIiiKqI2_ZI?size=800x600&amp;size_mode=3" alt="Card image cap">
+@endif
           <div class="card-body">
               <div class="title">
                 <h3>「漢字」の読み</h3>
@@ -103,7 +111,11 @@
           @for ($i=0; $i<9; $i++)
               <div class="col-md-4">
                   <div class="card">
-                      <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AABGCdB59PCRUg6LxDEw0fy5cW7aC1mJ9VxGUSzKmNo9YQ/12/78400833/jpeg/32x32/1/_/1/2/640x360.jpg/EIiY6zwYz6YTIAcoBw/hSaVqeKXMgcAX6NyC5zeCBLqq7R8l1q8BIiiKqI2_ZI?size=800x600&amp;size_mode=3" alt="Card image cap">
+                      <div class="background_test_mini" style="background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);">
+                          <div class="words_test_mini">
+                              漢字漢字漢字
+                          </div>
+                      </div>
                       <div class="card-body">
                           <h4 class="card-title">Card title</h4>
                           <p class="card-text">同一カテゴリ・タグ内その他一覧</p>
@@ -122,7 +134,11 @@
           @for ($i=0; $i<9; $i++)
               <div class="col-md-4">
                   <div class="card">
-                      <img class="card-img-top" src="https://photos-6.dropbox.com/t/2/AADYczXPPA03Lm_Oz9gNniG4HIhvityuz8F22EoM2mNR2w/12/78400833/png/32x32/1/_/1/2/640x360.png/EIiY6zwYz6YTIAcoBw/jfH3ZJirfrMUwPjXMZ8E1JeBTQpPpwdX92q289M6d7g?preserve_transparency=1&amp;size=800x600&amp;size_mode=3" alt="Card image cap">
+                      <div class="background_test_mini" style="background: linear-gradient(135deg, #d9afd9 0%, #97d9e1 100%);">
+                          <div class="words_test_mini">
+                              漢字漢字漢字
+                          </div>
+                      </div>
                       <div class="card-body">
                           <h4 class="card-title">Card title</h4>
                           <p class="card-text">最新、もしくはランダム一覧</p>

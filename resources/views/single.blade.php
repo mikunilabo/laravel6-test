@@ -1,17 +1,11 @@
 @extends ('layouts.test')
 
 @section ('content')
-  @component ('layouts.header') @endcomponent
-
-  <div class="main">
-    <div class="section section-buttons">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-8">
+    <div class="card">
+          <div class="card-body">
               <div class="title">
                 <h3>「漢字」の読み</h3>
               </div>
-
               <div class="row">
                   <div class="col-md-6">
                     <span class="label label-default">Default</span>
@@ -86,65 +80,58 @@
                     </div>
                   </div>
               </div>
+          </div>
+      </div>
 
-              @component ('layouts.ads') @endcomponent
+      @component ('layouts.ads') @endcomponent
 
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="card">
-                          <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">TODO：各ページへシェアボタン設置</p>
-                          </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">TODO：各ページへシェアボタン設置</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="title">
+        <h3>同一カテゴリ・タグ内その他一覧</h3>
+      </div>
+      <div class="row">
+          @for ($i=0; $i<9; $i++)
+              <div class="col-md-4">
+                  <div class="card">
+                      <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AABGCdB59PCRUg6LxDEw0fy5cW7aC1mJ9VxGUSzKmNo9YQ/12/78400833/jpeg/32x32/1/_/1/2/640x360.jpg/EIiY6zwYz6YTIAcoBw/hSaVqeKXMgcAX6NyC5zeCBLqq7R8l1q8BIiiKqI2_ZI?size=800x600&amp;size_mode=3" alt="Card image cap">
+                      <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">同一カテゴリ・タグ内その他一覧</p>
                       </div>
                   </div>
               </div>
-
-              <div class="title">
-                <h3>同一カテゴリ・タグ内その他一覧</h3>
-              </div>
-              <div class="row">
-                  @for ($i=0; $i<9; $i++)
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img class="card-img-top" src="https://photos-2.dropbox.com/t/2/AABGCdB59PCRUg6LxDEw0fy5cW7aC1mJ9VxGUSzKmNo9YQ/12/78400833/jpeg/32x32/1/_/1/2/640x360.jpg/EIiY6zwYz6YTIAcoBw/hSaVqeKXMgcAX6NyC5zeCBLqq7R8l1q8BIiiKqI2_ZI?size=800x600&amp;size_mode=3" alt="Card image cap">
-                              <div class="card-body">
-                                  <h4 class="card-title">Card title</h4>
-                                  <p class="card-text">同一カテゴリ・タグ内その他一覧</p>
-                              </div>
-                          </div>
-                      </div>
-                  @endfor
-              </div>
-
-              @component ('layouts.ads') @endcomponent
-
-              <div class="title">
-                <h3>最新、もしくはランダム一覧</h3>
-              </div>
-              <div class="row">
-                  @for ($i=0; $i<9; $i++)
-                      <div class="col-md-4">
-                          <div class="card">
-                              <div class="card-body">
-                                  <h4 class="card-title">Card title</h4>
-                                  <p class="card-text">最新、もしくはランダム一覧</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                              </div>
-                          </div>
-                      </div>
-                  @endfor
-              </div>
-
-              @component ('layouts.ads') @endcomponent
-          </div>
-          <div class="col-md-4">
-              @component ('layouts.sidebar') @endcomponent
-          </div>
-        </div>
+          @endfor
       </div>
-    </div>
 
-    @component ('layouts.footer') @endcomponent
-  </div>
+      @component ('layouts.ads') @endcomponent
+
+      <div class="title">
+        <h3>最新、もしくはランダム一覧</h3>
+      </div>
+      <div class="row">
+          @for ($i=0; $i<9; $i++)
+              <div class="col-md-4">
+                  <div class="card">
+                      <img class="card-img-top" src="https://photos-6.dropbox.com/t/2/AADYczXPPA03Lm_Oz9gNniG4HIhvityuz8F22EoM2mNR2w/12/78400833/png/32x32/1/_/1/2/640x360.png/EIiY6zwYz6YTIAcoBw/jfH3ZJirfrMUwPjXMZ8E1JeBTQpPpwdX92q289M6d7g?preserve_transparency=1&amp;size=800x600&amp;size_mode=3" alt="Card image cap">
+                      <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">最新、もしくはランダム一覧</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+          @endfor
+      </div>
+
+      @component ('layouts.ads') @endcomponent
 @endsection

@@ -61,7 +61,26 @@
     </style>
 </head>
 <body class="index-page sidebar-collapse">
-    @yield('content')
+    @component ('layouts.header') @endcomponent
+
+    <div class="main">
+        @component ('layouts.intro') @endcomponent
+
+        <div class="section section-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        @yield('content')
+                    </div>
+                    <div class="col-md-4">
+                        @component ('layouts.sidebar') @endcomponent
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @component ('layouts.footer') @endcomponent
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>

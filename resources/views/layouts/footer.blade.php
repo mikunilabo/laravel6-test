@@ -1,7 +1,7 @@
 <footer class="footer footer-black footer-white">
   <div class="container">
     <div class="row">
-      <nav class="footer-nav">
+      <nav class="footer-nav d-none d-md-block">
         <ul>
           <li>
             <a href="#" {{--target="_blank"--}}>利用規約</a>
@@ -21,6 +21,7 @@
         <span class="copyright">
           © {{ strtoupper(config('app.name')) }}
           <i class="fa fa-heart heart"></i> by <a href="https://www.mikunilabo.com/">Mikunilabo</a>
+          TODO：SM幅でフッターが出ない
         </span>
       </div>
     </div>

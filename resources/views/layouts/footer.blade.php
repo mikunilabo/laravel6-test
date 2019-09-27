@@ -4,13 +4,16 @@
       <nav class="footer-nav">
         <ul>
           <li>
-            <a href="#" {{--target="_blank"--}}>Creative Tim</a>
+            <a href="#" {{--target="_blank"--}}>利用規約</a>
           </li>
           <li>
-            <a href="#" {{--target="_blank"--}}>Blog</a>
+            <a href="#" {{--target="_blank"--}}>運営元</a>
           </li>
           <li>
-            <a href="#" {{--target="_blank"--}}>Licenses</a>
+            <a href="#" {{--target="_blank"--}}>お問い合わせ</a>
+          </li>
+          <li>
+            <a href="#">TODO：フッター下部固定</a>
           </li>
         </ul>
       </nav>

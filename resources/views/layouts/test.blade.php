@@ -23,6 +23,10 @@
 
     <style>
         /* TODO move */
+        body {
+          font-family: "Montserrat", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+          font-weight: 500;
+        }
         h1,
         .h1,
         h2,
@@ -45,7 +49,7 @@
         input,
         select,
         textarea {
-            font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+            font-family: "Montserrat", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
             font-weight: 500;
         }
         .main {

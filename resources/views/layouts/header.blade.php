@@ -18,7 +18,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="https://demos.creative-tim.com/paper-kit-2/docs/1.0/getting-started/introduction.html" target="_blank">
-                        <i class="nc-icon nc-book-bookmark"></i> Documentation
+                        <i class="nc-icon nc-book-bookmark"></i> {{ config('app.name') }}とは
                     </a>
                 </li>
                 <li class="nav-item">

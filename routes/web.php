@@ -11,8 +11,8 @@
 |
 */
 
-Route::view('/', 'welcome');
-Route::view('test', 'test');
+Route::view('/', 'test');
+Route::view('single', 'single');
 
 Auth::routes();
 
